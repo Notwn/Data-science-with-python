@@ -19,7 +19,7 @@ group_names = ["low", "medium", "high"]
 
 df["price-binned"] = pd.cut(df["price"], bins, labels=group_names, include_lowest=True)
 
-#printing the output to verify
+#printing the output to verify for the first 20
 print(df[["price", "price-binned"]].head(20))
 
 
