@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Load the dataset
-auto_dataset = "D:/Newton/Learning/Data science/auto_dataset.csv"
+auto_dataset = "auto_dataset.csv"
 df = pd.read_csv(auto_dataset)
 
 # Convert the 'price' column to numeric, forcing errors to NaN
