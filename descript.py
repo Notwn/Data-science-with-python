@@ -13,5 +13,5 @@ print(drive_wheels_counts)
 # Convert the 'price' column to numeric
 df['price'] = pd.to_numeric(df['price'], errors='coerce')
 
-sns.boxplot(x="drive-wheels", y="price", data=df ,hue_order=["fwd","rwd","4wd"], palette=["blue","orange","green"])
+sns.boxplot(x="drive-wheels", y="price", data=df ,hue= "drive-wheels", hue_order=["fwd","rwd","4wd" ], palette=["blue","orange","green"])
 plt.show()
