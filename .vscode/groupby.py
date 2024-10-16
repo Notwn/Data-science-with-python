@@ -11,4 +11,6 @@ df = pd.read_csv(auto_dataset)
 df_test = df[["price", "body-style","drive-wheels"]]
 
 df_grp = df_test.groupby(["body-style","drive-wheels","price"], as_index=False).mean()
-print(df_grp)
+
+df_pivot= df_grp.pivot(index= "drive-wheels", columns= "body-style")
+print(df_pivot)
